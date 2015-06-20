@@ -1,0 +1,44 @@
+{
+    "name": "Doyulink",
+    "id": "doyulink",
+    "description": {
+        "en": "Doyulink is an open source personal data manager. It helps you organize files with tags on every platform.",
+        "fr": "Doyulink est un gestionnaire de fichiers open source. Il vous aide à organiser vos fichiers à l'aide de tags et ce sur n'importe quelle plateforme."
+    },
+    "developer": {
+        "name": "Canauos"
+    },
+    "multi_instance": "true",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for Doyulink",
+                    "fr": "Choisissez un domaine pour Doyulink"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for Doyulink",
+                    "fr": "Choisissez un chemin pour Doyulink"
+                },
+                "example": "/doyulink",
+                "default": "/doyulink"
+            },
+            {
+                "name": "is_public",
+                "ask": {
+                    "en": "Is it a public Doyulink? (note: Doyulink is just a redirection tool)",
+                    "fr": "Est-ce un Doyulink public ? (note: Doyulink est juste un outil de redirection)"
+                },
+                "choices": ["Yes", "No"],
+                "default": "No"
+            }
+        ]
+    }
+}
