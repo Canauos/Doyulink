@@ -11,14 +11,23 @@
     "multi_instance": "true",
     "arguments": {
         "install" : [
+            { 
+                 "name": "domain", 
+                 "type": "domain", 
+                 "ask": { 
+                     "en": "Choose a domain for Doyulink", 
+                     "fr": "Choisissez un domaine pour Doyulink" 
+                    }, 
+                    "example": "domain.org" 
+            }, 
             {
-                "name": "domain",
-                "type": "domain",
+                "name": "port",
+                "type": "path",
                 "ask": {
-                    "en": "Choose a domain for Doyulink",
-                    "fr": "Choisissez un domaine pour Doyulink"
+                    "en": "Choose the port you want to redirect",
+                    "fr": "Choisissez le port que vous voulez rediriger"
                 },
-                "example": "domain.org"
+                "example": "8443/application"
             },
             {
                 "name": "path",
